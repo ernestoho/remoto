@@ -1,31 +1,49 @@
-# Basic CloudCannon configuration
-paths: 
-  uploads: uploads # Specify where uploaded files should go
-  data: _data # Specify where data files are located
-  collections: content # Specify where your content files are located
-
-# Configure collections (adjust according to your content structure)
+source: out
+paths:
+  uploads: uploads
+  collections: content
+  data: _data
 collections_config:
   pages:
     path: content/pages
     output: true
+    icon: notes
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
   posts:
     path: content/posts
     output: true
-
-# Define editable regions
-_editables:
-  content:
-    format: markdown
-
-# Configure the CloudCannon editor
+    icon: notes
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+collection_groups:
+  - heading:
+    collections:
+_enabled_editors:
+  - visual
+  - content
+  - data
 _inputs:
   title:
     type: text
     label: Title
+    cascade: true
   date:
     type: date
     label: Publish Date
+    cascade: true
   content:
     type: markdown
     label: Content
+    cascade: true
+_editables:
+  content:
+    allow_custom_markup: false
+    remove_custom_markup: false
+    format: markdown
+    image_size_attributes: true
+editor:
+  default_path:
+timezone: Etc/UTC
