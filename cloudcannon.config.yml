@@ -39,11 +39,28 @@ _inputs:
     label: Content
     cascade: true
 _editables:
+  text:
+    allow_custom_markup: true
+    remove_custom_markup: false
+    bold:
+    copyformatting:
+    italic:
+    link:
+    paths:
+    redo:
+    removeformat:
+    strike:
+    subscript:
+    superscript:
+    underline:
+    undo:
   content:
     allow_custom_markup: false
     remove_custom_markup: false
     format: markdown
     image_size_attributes: true
+    resize_style: contain
+base_url: https://adroit-cucumber.cloudvent.net/
 editor:
-  default_path:
+  default_path: https://adroit-cucumber.cloudvent.net
 timezone: Etc/UTC
