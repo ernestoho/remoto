@@ -1,0 +1,8 @@
+paths:
+  uploads: uploads
+  static: ''
+  collections: ''
+  data: ''
+data_config:
+  blog-tags: true
+timezone: Etc/UTC
