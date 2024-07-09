@@ -1,5 +1,5 @@
 s# Basic CloudCannon configuration
-paths: /public
+paths: 
   uploads: uploads # Specify where uploaded files should go
   data: _data # Specify where data files are located
   collections: content # Specify where your content files are located
