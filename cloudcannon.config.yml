@@ -1,8 +1,37 @@
+source: /public
 paths:
   uploads: uploads
   static: ''
   collections: ''
   data: ''
+collections_config:
+  pages:
+    path:
+    output: false
+    url:
+    filter:
+    parse_branch_index:
+    name:
+    description: ''
+    icon: notes
+    documentation:
+    preview:
+    sort:
+    sort_options:
+    singular_name:
+    singular_key:
+    _editables:
+    _inputs:
+    _select_data:
+    _structures:
+    add_options:
+    create:
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+    new_preview_url:
+    schemas:
+    schema_key:
 data_config:
   blog-tags: true
 timezone: Etc/UTC
