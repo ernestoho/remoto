@@ -1,37 +1,31 @@
-source: /public
-paths:
-  uploads: uploads
-  static: ''
-  collections: ''
-  data: ''
+s# Basic CloudCannon configuration
+paths: /public
+  uploads: uploads # Specify where uploaded files should go
+  data: _data # Specify where data files are located
+  collections: content # Specify where your content files are located
+
+# Configure collections (adjust according to your content structure)
 collections_config:
   pages:
-    path:
-    output: false
-    url:
-    filter:
-    parse_branch_index:
-    name:
-    description: ''
-    icon: notes
-    documentation:
-    preview:
-    sort:
-    sort_options:
-    singular_name:
-    singular_key:
-    _editables:
-    _inputs:
-    _select_data:
-    _structures:
-    add_options:
-    create:
-    disable_add: false
-    disable_add_folder: false
-    disable_file_actions: false
-    new_preview_url:
-    schemas:
-    schema_key:
-data_config:
-  blog-tags: true
-timezone: Etc/UTC
+    path: content/pages
+    output: true
+  posts:
+    path: content/posts
+    output: true
+
+# Define editable regions
+_editables:
+  content:
+    format: markdown
+
+# Configure the CloudCannon editor
+_inputs:
+  title:
+    type: text
+    label: Title
+  date:
+    type: date
+    label: Publish Date
+  content:
+    type: markdown
+    label: Content
