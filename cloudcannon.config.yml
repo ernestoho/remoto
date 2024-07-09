@@ -1,4 +1,4 @@
-s# Basic CloudCannon configuration
+# Basic CloudCannon configuration
 paths: 
   uploads: uploads # Specify where uploaded files should go
   data: _data # Specify where data files are located
