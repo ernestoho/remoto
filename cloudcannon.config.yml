@@ -60,7 +60,7 @@ _editables:
     format: markdown
     image_size_attributes: true
     resize_style: contain
-base_url: https://adroit-cucumber.cloudvent.net/https:/remoto-fawn.vercel.app
+base_url: https://adroit-cucumber.cloudvent.net
 editor:
-  default_path: https://adroit-cucumber.cloudvent.net/https:/remoto-fawn.vercel.app
+  default_path: https://adroit-cucumber.cloudvent.net
 timezone: Etc/UTC
